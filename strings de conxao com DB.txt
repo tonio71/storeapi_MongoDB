@@ -1,13 +1,13 @@
 STRING DE CONEXAO:
 
-mongodb+srv://tonio:<password>@cluster0.i7qu8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+mongodb+srv://toniok:<password>@cluster0.i7qu8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
 
 
 STRING DE CONEXAO FULL DRIVER CODE EXAMPLE:
 
 const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://tonio:<password>@cluster0.i7qu8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://toniok:<password>@cluster0.i7qu8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
@@ -17,4 +17,4 @@ client.connect(err => {
 
 
 CONNECTION STRING FOR MONGODB COMPASS.
-mongodb+srv://tonio:<password>@cluster0.i7qu8.mongodb.net/test
+mongodb+srv://toniok:<password>@cluster0.i7qu8.mongodb.net/test
